@@ -1,10 +1,26 @@
 <!DOCTYPE html>
     <html>
+      
         <head>
             <script src="jquery-3.3.1.min.js"></script>
+            <script src="javascript.js"></script>
             <title>Producto!</title>
         </head>
+        
         <body>
             <h1>The home page to my new personal project! </h1>
+            <p id="date"></p> <!--Displays date using script below-->
+            <script>
+                var d =  new Date();
+                var month = d.getMonth() +1;
+                var day = d.getDate();
+                var year = d.getFullYear();
+                document.getElementById("date").innerHTML = "Today is " + month + "/" + day + "/" + year;
+            </script>
+
+            
+
+
+
         </body>
     </html>
